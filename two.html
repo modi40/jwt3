@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Homepage</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+header {
+background: rgb(26, 54, 93);
+color: white;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header h1 {
+margin: 0;
+font-size: 24px;
+}
+nav {
+background: rgb(43, 108, 176);
+padding: 10px 20px;
+display: flex;
+gap: 15px;
+justify-content: flex-start;
+}
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+text-decoration: underline;
+}
+main {
+flex: 1;
+display: flex;
+padding: 20px;
+gap: 20px;
+}
+.content {
+flex: 3;
+background: rgb(237, 242, 247);
+padding: 20px;
+border-radius: 4px;
+}
+.sidebar {
+flex: 1;
+background: rgb(226, 232, 240);
+padding: 20px;
+border-radius: 4px;
+}
+footer {
+background: rgb(26, 54, 93);
+color: white;
+text-align: center;
+padding: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media (max-width: 768px) {
+main {
+flex-direction: column;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>City College of Science and Commerce</h1>
+<span>Excellence in Education</span>
+</header>
+<nav>
+<a href="javascript:void(0)" data-target="home">Home</a>
+<a href="javascript:void(0)" data-target="about">About Us</a>
+<a href="javascript:void(0)" data-target="courses">Courses</a>
+<a href="javascript:void(0)" data-target="admissions">Admissions</a>
+<a href="javascript:void(0)" data-target="contact">Contact</a>
+</nav>
+<main>
+<section class="content">
+<h2>Welcome to Our College</h2>
+<p>Providing top-tier academic training in Computer Science, Information Technology, and Physical Sciences.</p>
+</section>
+<aside class="sidebar">
+<h3>Announcements</h3>
+<p>Admissions open for the upcoming academic year. Apply before the deadline.</p>
+</aside>
+</main>
+<footer>
+<p>2026 City College. All rights reserved.</p>
+</footer>
+</body>
+</html>
